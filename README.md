@@ -7,7 +7,7 @@
 
 ## Project Overview
 
-The **To-Do List API** project focuses on creating a backend service for managing tasks in a To-Do application. Unlike a basic CRUD operation project, this API introduces authentication and more advanced task management capabilities.
+The **To-Do List API** project focuses on creating a backend service for managing tasks in a To-Do application. Unlike a basic CRUD operation project, this API introduces authentication, authorization and more advanced task management capabilities.
 
 ### Key Features:
 1. **Authentication Logic**: 
