@@ -24,4 +24,5 @@ The **To-Do List API** project focuses on creating a backend service for managin
    
 4. **Task Queries**:
    - Get a list of all tasks.
+   - Filter tasks by their status (e.g., pending, completed).
    - Retrieve detailed information about individual tasks.
