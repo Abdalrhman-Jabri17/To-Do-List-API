@@ -18,7 +18,7 @@ class TaskResource extends JsonResource
             'id' => $this->id,
             'user_id' => $this->user_id,
             'title' => $this->title,
-            'status' => $this->status,
+            'status' => $this->status === true ? "completed" : "pending",
         ];
     }
 }
