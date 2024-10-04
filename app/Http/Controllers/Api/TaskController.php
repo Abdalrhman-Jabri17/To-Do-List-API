@@ -15,7 +15,17 @@ class TaskController extends Controller
      */
     public function index()
     {
+        // dd(request('status'));
+        $status = request('status');
+        if ($status) {
+            if ($status === "completed")
+                $tasks = auth()->user()->tasks->where('status', '=', true);
+            if ($status === "pending")
+                $tasks = auth()->user()->tasks->where('status', '=', false);
+            return TaskResource::collection($tasks);
+        }
         $tasks = auth()->user()->tasks;
+        // dd($tasks);
         return TaskResource::collection($tasks);
     }
 
